@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .bg-dot {
+            margin-top: 20px;
+            width: 200px;
+            height: 50px;
+            background-image: radial-gradient(circle, #0cf 15px, transparent),
+                radial-gradient(circle, red 15px, transparent),
+                radial-gradient(circle, yellow 15px, transparent),
+                radial-gradient(circle, green 15px, transparent);
+            background-repeat: no-repeat;
+            background-position: 0 0, 50px 0, 100px 0, 150px 0, 200px 0;
+            background-size: 50px 50px;
+        }
+
+        .animate-dot {
+            animation: move-dot 8s linear infinite;
+        }
+
+        .animate-dot2 {
+            animation: move-dot2 6s linear infinite;
+        }
+
+        @keyframes move-dot {
+            0% {
+                background-position: 0 0, 50px 0, 100px 0, 150px 0;
+            }
+
+            30% {
+                background-position: 50px 0, 0 0, 100px 0, 150px 0;
+            }
+
+            60% {
+                background-position: 50px 0, 100px 0, 0 0, 150px 0;
+            }
+
+            100% {
+                background-position: 50px 0, 100px 0, 150px 0, 0 0;
+            }
+        }
+
+        @keyframes move-dot2 {
+            0% {
+                background-image: radial-gradient(circle, #0cf 15px, transparent),
+                    radial-gradient(circle, gray 15px, transparent),
+                    radial-gradient(circle, gray 15px, transparent),
+                    radial-gradient(circle, gray 15px, transparent);
+            }
+
+            30% {
+                background-image: radial-gradient(circle, gray 15px, transparent),
+                    radial-gradient(circle, red 15px, transparent),
+                    radial-gradient(circle, gray 15px, transparent),
+                    radial-gradient(circle, gray 15px, transparent);
+            }
+
+            60% {
+                background-image: radial-gradient(circle, gray 15px, transparent),
+                    radial-gradient(circle, gray 15px, transparent),
+                    radial-gradient(circle, yellow 15px, transparent),
+                    radial-gradient(circle, gray 15px, transparent);
+            }
+
+            100% {
+                background-image: radial-gradient(circle, gray 15px, transparent),
+                    radial-gradient(circle, gray 15px, transparent),
+                    radial-gradient(circle, gray 15px, transparent),
+                    radial-gradient(circle, green 15px, transparent);
+            }
+        }
+    </style>
+    <div class="bg-dot black-theme animate-dot"></div>
+    <div class="bg-dot black-theme animate-dot2"></div>
+</body>
+
+</html>

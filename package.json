@@ -1,0 +1,31 @@
+{
+  "name": "anydoor",
+  "version": "1.0.0",
+  "description": "Tiny NodeJS Static Web server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apluxury/anydoor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apluxury/anydoor/issues"
+  },
+  "homepage": "https://github.com/apluxury/anydoor#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "handlebars": "^4.2.1",
+    "mime": "^2.4.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0"
+  }
+}
